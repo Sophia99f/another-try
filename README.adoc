@@ -46,14 +46,14 @@ git clone https://github.com/nextnormalacademy/document-template.git --recursive
 . Rename the repository to the name of your curriculum e.g. `apo-curriculum`
 . Rename the file `/docs/document-template.adoc` to the name of your curriculum e.g. `apo-curriculum.adoc` (this is later on referred to as `curriculumFileName`)
 . Open the file `./config/setup.adoc` to adjust configuration specific to your curriculum:
-.. `:curriculum-short: MODULKUERZEL`: this is the abbreviation of your module. Replace MODULKUERZEL with your module name e.g. APO
+.. `:short: MODULKUERZEL`: this is the abbreviation of your module. Replace MODULKUERZEL with your module name e.g. APO
 .. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full German title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Advanced Product Owner"
 .. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full English title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Advanced Product Owner"
 . Open the file `build.gradle` to adjust attributes specific to your curriculum:
 [loweralpha]
 .. `curriculumFileName`: the name of the asciidoc root file of your curriculum e.g. `apo-curriculum` (see above! The `.adoc` suffix is added automatically, omit it here!)
 . Edit the file `document.version` and enter the version number this new version of the curriculum shall have e.g. "2020.1".
-. Open README.adoc and replace the string `curriculum-template` with the name of your Github repository e.g. `apo-curriculum`
+. Open README.adoc and replace the string `another-try` with the name of your Github repository e.g. `apo-curriculum`
 . Build the project with http://www.gradle.com[gradle] (you need a locally installed JDK) via `./gradlew`.
 . Once the "BUILD SUCCESSFUL" is show, you can review the build result under `./build/index.html`
 
